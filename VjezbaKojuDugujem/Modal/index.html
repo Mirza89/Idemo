@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Modal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Contact Form</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Enter your name" style="width:400px" name="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" style="width: 400px">
+    </div>
+     <button type="button" class="btn btn-success" onclick="pokaziModal()" data-toggle="modal" data-target="#myModal">Submit</button>
+  </form>
+</div>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Are you sure ???</h4>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure that you entered this<br><p style="font-weight: bolder" id="NamE"></p> and this email address <br><br><p style="font-weight: bolder" id="EmaiL"></p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+  	var modal = $("#myModal");
+  		function pokaziModal(){
+  			var ime = $("#name").val();
+  			var email = $("#email").val();
+
+  			$("#NamE").text(ime);
+  			$("#EmaiL").text(email);
+
+  			modal.css("display","block");
+  		}
+
+  		function closeFja(){
+  			modal.css("display", "none");
+  		}
+  </script>
+
+
+</body>
+</html>

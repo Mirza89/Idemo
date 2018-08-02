@@ -1,0 +1,37 @@
+body{
+	background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/transparent-background-generator-6.png");	
+}
+
+#BarNav{
+	Opacity: 0.4;
+	text-transform: Uppercase;
+}
+
+#LinksInNavBar{
+	padding-left: 625px;
+	color: black;		
+}
+
+li:hover{
+	background-color: red;
+}
+
+.footer{
+	min-height: 45px;
+    background-color: #f8f8f8;
+    color: black;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+#Slika{
+	height: 200px;
+	width: 1620px;
+}
+
