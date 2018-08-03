@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ToggleWoggle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="toggle col-md-4" style="padding: 10px">
+  <button onclick="myFunction()" class="btn"><i class="fa fa-bars"></i></button>
+    <div id="ToggleDown" class="toggle-content">
+      <a href="index.html">Good Picture</a>
+      <a href="Druga.html">Better Picture</a>
+      <a href="Treca.html">The Best Picture</a>
+    </div>
+  </div>
+
+  <img src="http://unf--kthegulf.com/wp-content/uploads/2018/04/Tahiti-St-Regis-Bora-Bora-French-Polynesia-Lu-Bungalows.jpg" class="center" alt="TheRoad">
+
+
+
+
+  <script>
+
+  function myFunction() {
+      document.getElementById("ToggleDown").classList.toggle("show");
+  }
+    window.onclick = function(event) {
+    if (!event.target.matches('.btn')) {
+
+      var dropdowns = document.getElementsByClassName("toggle-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+
+
+
+</body>
+</html>
