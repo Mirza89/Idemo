@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 10</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div id="logo">
+				<a class="navbar-brand">
+					<img src="lorem_cali-big.png" class="logo">
+				</a>
+			</div>
+		<div class="contact">
+			<p>If you want to ask us something?<span style="color:black">Call</span>
+			<br>
+			<span style="float:right; color:blue;"><strong>+361987654321</strong></span>
+			</p>
+		</div>
+		</div>
+		<div class="row">
+			<ul id="Navi">
+				<li>
+					<a>main page</a>
+				</li>
+				<li>
+					<a>references</a>
+				</li>
+				<li>
+					<a>services</a>
+				</li>
+				<li>
+					<a>contact us now</a>
+				</li>
+				<li>
+					<a>something special</a>
+				</li>
+				<li>
+					<a>about company</a>
+				</li>
+			</ul>
+		</div>
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <div class="carousel-inner">
+	      <div class="item active">
+	        <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:100%">
+	      </div>
+
+	      <div class="item">
+	        <img src="https://952ws4ayphb1pfk6hy8v3gfr-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/PPS-pond-from-deck-1.jpg" style="width:100%">
+	      </div>
+
+	      <div class="item">
+	        <img src="https://reality.skanska.cz/4957f4/contentassets/2f8f520550f34e64bef7c479448dead1/hendluv-dvur/neigbourhood-737-x-350/img_9976--park-pred-zamkem-hanspaulka.jpg?fastscale=true&quality=60"style="width:100%;">
+	      </div>
+	    </div>
+
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+		<div class="about">
+			<div class="main">
+				<h1>Lorem ipsum dolor sit amanet</h1>
+				<p>
+					 Tation assentior eu mel. Ius no purto singulis. Ei solet legimus abhorreant per, nam eu timeam intellegat.
+					  Nec indoctum efficiendi et.
+					<br>
+					<br>
+				<span>Altera tibique no sit,</span>mei vitae accommodare et,putant bonorum ex cum. Mea tempor eligendi cu, quo ei elit neglegentur.
+				<span>Has fierent delectus detraxit no,</span> ex vis tamquam equidem. Has aeque nullam facilis ex,
+				<span style="color:black"> assum pertinax ea duo,</span> an facer debet persecuti his. Ei solet legimus
+				<span style="color:blue; text-decoration:underline;">abhorreant per,</span> nam eu timeam intellegat.
+				</p>
+				<button class="btn" id="myPopup" onclick="myFunction()" data-toggle="popover" title="Lorem Ipsum Header" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">About Company</button>
+			</div>
+			<div class="sidebar">
+				<p>Tation assentior eu mel. Ius no purto singulis. Ei solet legimus abhorreant per, nam eu timeam intellegat. Nec indoctum efficiendi et.</p>
+				 <button id="popoverData" class="more" href="#" data-content="Lorem ipsum dolor sit amet, blandit iudicabit consectetuer vim cu, modo erroribus sed at. Tation assentior eu mel. Ius no purto singulis. Ei solet legimus abhorreant per, nam eu timeam intellegat. Nec indoctum efficiendi et." rel="popover" data-placement="bottom" data-original-title="Lorem Lorem Ipsum Ipsum" data-trigger="hover">Read More</button>
+			</div>
+		</div>
+		<div class="container">
+		<div class="col-md-3 col-lg-3">
+		<h1>about us</h1>
+		Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</div>
+	  <div class="col-md-3 col-lg-3 ">
+	  <h1>menu</h1>
+		<p>Contact<p>
+	  <p>About us<p>
+		<p>Services<p>
+	  <p>We are<p>
+	  <p>References<p>
+	  </div>
+	  <div class="col-md-3 col-lg-3">
+	  <h1>Contact us</h1>
+	  <p>LOREM IPSUM<br>
+		E-mail: loremipsum@color.com<br>
+		Phone: +361987654321
+	  </p>
+	  </div>
+	  <div class="col-md-3 col-lg-3">
+	  <h1>p.o.box</h1>
+	  <p>LOREM IPSUM<br>
+		E-mail: loremipsum@color.com<br>
+		Phone: +361987654321
+	  </p>
+	  </div>
+		</div>
+		<div class="footer">
+			<div class="left">Copyright 2018|Lorem ipsum|All rights reserved</div>
+			<div class="right">Created by:<a href="https://www.instagram.com/dzenita.moranjkic/?hl=en">Some Guy</a></div>
+		</div>
+		</div>
+
+
+		<script type="text/javascript">
+		$('#popoverData').popover();
+
+		$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+		});
+
+		</script>
+</body>
+</html>

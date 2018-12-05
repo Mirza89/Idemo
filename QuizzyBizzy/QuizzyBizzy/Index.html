@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Kviz</title>
+</head>
+<style>
+ #test{
+   margin-left: 650px;
+   border:lime 3px solid;
+   padding:10px 40px 40px 40px;
+   background-color:cyan;
+   width:25%;
+  }
+
+  #test_status{
+    margin-left: 650px;
+  }
+</style>
+
+<script type="text/javascript">
+
+
+/*
+pos varijablu sam smjestio sve varijable koje cu koristiti
+*/
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
+
+/*
+pitanja
+*/
+var questions = [
+  ["Ispravna sintaksa elemnta za prelazak u novi red?", "p", "break", "br/", "C"],
+  ["Element TITLE pripada kojem elemntu?", "body", "head", "table", "B"],
+  ["Element h6 ima sadržaj koji je?", "najveće veličine", "najmanje veličine", "malo manji od najveće", "B"],
+  ["Tag kojim se definiše zaglavlje tabele ?", "th", "tr", "td", "A"]
+  ];
+
+/*
+Ova get funckija je skracenica za getElementById
+*/
+function get(x){
+  return document.getElementById(x);
+}
+function renderQuestion(){
+  test = get("test");
+  if(pos >= questions.length){
+    test.innerHTML = "<h2>Pogodili ste "+correct+" od "+questions.length+" pitanja tačno</h2>";
+    get("test_status").innerHTML = "Kviz Završen";
+    pos = 0;
+    correct = 0;
+    //Zaustavlja pitanja nakon što je kviz završen
+    return false;
+  }
+  get("test_status").innerHTML = "Pitanje "+(pos+1)+" od "+questions.length;
+  question = questions[pos][0];
+  chA = questions[pos][1];
+  chB = questions[pos][2];
+  chC = questions[pos][3];
+  test.innerHTML = "<h3>"+question+"</h3>";
+  /*
+  test.innerHTML += radi append
+  */
+  test.innerHTML += "<input type='checkbox' name='choices' value='A'> "+chA+"<br>";
+  test.innerHTML += "<input type='checkbox' name='choices' value='B'> "+chB+"<br>";
+  test.innerHTML += "<input type='checkbox' name='choices' value='C'> "+chC+"<br><br>";
+  test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+
+/*
+Ova funkcija izvrsava provjeru tacnih odgovora
+*/
+function checkAnswer(){
+  choices = document.getElementsByName("choices");
+  for(var i=0; i<choices.length; i++){
+    if(choices[i].checked){
+      choice = choices[i].value;
+    }
+  }
+  //U slucaju da je tacan odgovor prebacuje na drugo pitanje i povecava se +1
+  if(choice == questions[pos][4]){
+    correct++;
+  }
+  pos++;
+  //renderQuestion prikazuje pitanje
+  renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+
+
+//Nedozvoljava F5 niti R dugme na tastaturi da se izvrši
+document.onkeydown = function()
+{
+    switch (event.keyCode)
+    {
+        case 116 :
+            event.returnValue = false;
+            event.keyCode = 0;
+            return false;
+        case 82 :
+            if (event.ctrlKey)
+            {
+                event.returnValue = false;
+                event.keyCode = 0;
+                return false;
+            }
+    }
+}
+</script>
+
+<body>
+<h2 id="test_status"></h2>
+<div id="test"></div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ko/Ko/Tko želi/ima želju postati Milijunas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Style.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="sidenav">
+    <ul>
+      <li id="Yees">100</li>
+      <br>
+      <li>200</li>
+      <br>
+      <li>400</li>
+      <br>
+      <li>500</li>
+      <br>
+      <li>1000</li>
+      <br>
+      <li>14000</li>
+      <br>
+      <li>16000</li>
+      <br>
+      <li>18000</li>
+      <br>
+      <li>20000</li>
+      <br>
+      <li>50000</li>
+      <br>
+      <li>150000</li>
+      <br>
+      <li>250000</li>
+      <br>
+      <li>500000</li>
+      <br>
+      <li>1000000</li>
+    </ul>
+  </div>
+  <div class="container" style="text-align:center;margin-top:300px;">
+    <button type="button" id="Btn" class="btn btn-danger" name="button" onclick="FunkcijaNEka()" style="width: 500px; height:250px;border-radius: 20px;font-size:38px;">Tko/Ko/Ko želi biti milijunaš</button>
+  </div>
+<div class="container" style="position:relative;">
+
+<div id="mojDiv" style="visibility:hidden;">
+  <div class="col-lg-12 col-md-12" style="text-align:center">
+    <button type="button" id="fiftyfifty" style="height:75px;width:200px" class="btn btn-warning fifty" name="button">50:50</button>
+  <h1 id="pitanje" style="text-align:center;color:white;">Ko je bio pjevac benda Mettalica ??</h1>
+  </div>
+
+  <br><br><br><br>
+
+
+  <div class="row"style="text-align:center;">
+
+    <div class="col-lg-6 col-md-6"  >
+      <button type="button" id="btnYes" value="Yes" class="btn btn-default  test" name="button">James Hetfield</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <button type="button" value="No" id="btnNo" class="btn btn-default test" name="button">Šaban Šaulić</button>
+      </div>
+    </div>
+  <br>
+  <br>
+  <div class="row" style="text-align:center;">
+    <div class="col-lg-6 col-md-6" >
+      <button type="button" class="btn btn-default test" id="btnNo1" value="No" name="button">James Brown</button>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+      <button type="button" class="btn btn-default test" id="btnNo2" value="No" name="button">Vito Helsing</button>
+    </div>
+  </div>
+</div>
+</div><!-- Kraj prvog pitanja-->
+
+<div class="container">
+
+
+
+<!--Pocetak prvog pitanja-->
+<div id="mojDiv2" class="col-lg-12" style="visibility:hidden;">
+  <div class="col-lg-12 col-md-12" style="text-align:center">
+    <button type="button" id="fiftyfifty2" style="height:75px;width:200px" class="btn btn-warning fifty2" name="button">50:50</button>
+  <h1 id="pitanje2" style="text-align:center;color:cyan;">Ko je najbolja predavacica kursa HTML/CSS/JS ???</h1>
+  </div>
+
+  <br><br><br><br><br><br><br><br>
+
+
+  <div class="row"style="text-align:center;">
+
+    <div class="col-lg-6 col-md-6"  >
+      <button type="button" id="btnYess" value="Yes" class="btn btn-default test1" name="button">Azra Pirić + ?</button>
+      <button type="button" value="No" id="btnNoP" class="btn btn-default test" name="button">Dženita Moranjkić</button>
+      </div>
+    </div>
+  <br>
+  <br>
+  <div class="row" style="text-align:center;">
+    <div class="col-lg-6 col-md-6" >
+      <button type="button" class="btn btn-default test" id="btnNoP1" value="No" name="button">Emina Omerović</button>
+      <button type="button" class="btn btn-default test" id="btnNoP2" value="No" name="button">Edin SUljetović</button>
+    </div>
+  </div>
+</div>
+
+  <div class="container" id="tacanOdgovor" style="visibility:hidden;text-align:center;">
+    <button type="button" class="btn btn-success" name="button" style="height:100px; width:200px;">Odogovor je Tačan!!!</button>
+  </div>
+
+  <div class="container" id="tacanOdgovor2" style="visibility:hidden;text-align:center;">
+    <button type="button" class="btn btn-success" name="button" style="height:100px; width:200px;">Odogovor je Tačan!!!</button>
+  </div>
+
+  <div class="container" id="neTacanOdgovor" style="visibility:hidden;">
+    <button type="button" class="btn btn-danger" name="button" style="height:100px; width:200px;">Odogovor nije Tačan!!!</button>
+  </div>
+</div>
+</body>
+<script src="Index.js" charset="utf-8"></script>
+</html>
