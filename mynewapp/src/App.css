@@ -296,3 +296,7 @@
         font-size: 3rem;
     }
 }
+
+body{
+  overflow-x: hidden;
+}
