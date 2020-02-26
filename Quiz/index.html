@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style media="screen">
+      .btn {
+        padding: 15px;
+        margin: 10px;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      .Pitanje{
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 100px;
+        border-style: groove;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Pitanje col-md-8" id="a1">
+      <h4>Is device intended for channeling orbstoring blood, body fluids,<br /> cells or tissues, liquids or gases for the purpose of eventual infusion, administration or
+          introduction into the body?</h4>
+          <button type="button" class="btn btn-primary" id="Odg1" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg2" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a1No">
+      <h4>Is non-invasive device intended for modifying biological or chemical composition of human tissues or cells, blood , other body liquids or other liquids intended for implantation or
+          administration into the body?</h4>
+          <button type="button" class="btn btn-primary" id="Odg3" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg4" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a1Yes">
+      <h4>May device be conncected to a class IIa, class IIb or class III active device?</h4>
+          <button type="button" class="btn btn-primary" id="Odg5" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg6" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a2No">
+      <h4>Is product a blood bag?</h4>
+          <button type="button" class="btn btn-primary" id="Odg7" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg8" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a2Yes">
+      <h4>Cllas IIa Rule 2.</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a3No">
+      <h4>Is device intended for chanelling or storing blood liquids or for storing organs, parts of organs or body cells and tissues?</h4>
+          <button type="button" class="btn btn-primary" id="Odg9" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg10" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a3Yes">
+      <h4>Cllas IIb Rule 2.</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a4No">
+      <h4>Class I Rule 2.</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a4Yes">
+      <h4>Class IIa Rule 2.</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a5No">
+      <h4>Is it a device which comes into contact with injured skin or mucous membrane? </h4>
+          <button type="button" class="btn btn-primary" id="Odg13" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg14" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a5Yes">
+      <h4>Is device intended to be used for treatment, which consists of filtration , centrifugation or exchanges of gas?</h4>
+          <button type="button" class="btn btn-primary" id="Odg11" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg12" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a6Yes">
+      <h4>Class IIa Rule 3.</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a6No">
+      <h4>Is device consisting of a substance or a mixture of substances intended to be used IN VITRO in direct contact with human cells, tissues or organs taken form the human body or used IN VITRO with human embroys before their implantation or administration into the body?</h4>
+          <button type="button" class="btn btn-primary" id="Odg15" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg16" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a7Yes">
+      <h4>Class III Rule 3.</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a7No">
+      <h4>Class IIb Rule 3.</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a8No">
+      <h4>Class I Rule 1. </h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a8Yes">
+      <h4>Is device intended to be used as a mechanical barrier, for compression or for absorption of exudates?</h4>
+          <button type="button" class="btn btn-primary" id="Odg17" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg18" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a9Yes">
+      <h4>Class I Rule 4..</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a9No">
+      <h4>Is devices intended to be used principally for skin injuries which have breached the dermis or mucous membrane and can only heal by secondary intent?</h4>
+          <button type="button" class="btn btn-primary" id="Odg19" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg20" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a10Yes">
+      <h4>Class IIb Rule 4.</h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a10No">
+      <h4>Is device principally intended to manage the micro-environment of injured skin or mucous membrane? </h4>
+          <button type="button" class="btn btn-primary" id="Odg21" name="button">YES</button>
+          <button type="button" class="btn btn-danger" id="Odg22" name="button">NO</button>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a11Yes">
+      <h4>Class IIa Rule 4. </h4>
+    </div>
+
+    <div class="Pitanje col-md-8" id="a11No">
+      <h4>In other case all non-invasive devices which come into contact with injured skin or mucous membrane are classified to Class IIa Rule 4</h4>
+    </div>
+
+  </body>
+  <script type="text/javascript" src="index.js">
+  </script>
+</html>
